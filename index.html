@@ -13,10 +13,30 @@
          <a href='#menu'>Menu</a>
         <a href='#contact'>Contact</a> 
         <a href='#about'>About</a>
-        <a href='javascript: void(0);' class='icon' onclick="myFunction()">
+        <a href='javascript: void(0);' class='icon' onclick="showNav()">
             <i class="material-icons">menu</i>      
         </a>
     </div>
- 
+
+    <div style='margin: 30px;text-align: center;'>
+        <h2>My Responsive Navbar</h2>
+        <p>with Vanilla.js and CSS</p>
+        <p>Resize the browser window and check it out</p>
+    </div>
+
+    <script>
+
+        function showNav() {
+           var y = document.getElementById('topNav');
+           if (y.className === 'nav') {
+               y.classList.add('responsive')
+           }else {
+               y.classList.remove('responsive');
+           }
+           
+        }
+
+    </script>
+
 </body>
 </html>
