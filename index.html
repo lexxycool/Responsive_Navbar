@@ -27,12 +27,8 @@
     <script>
 
         function showNav() {
-           var y = document.getElementById('topNav');
-           if (y.className === 'nav') {
-               y.classList.add('responsive')
-           }else {
-               y.classList.remove('responsive');
-           }
+           var myNav = document.getElementById('topNav');
+           myNav.classList.toggle('responsive');
            
         }
 
